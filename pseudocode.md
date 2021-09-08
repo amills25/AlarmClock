@@ -1,4 +1,4 @@
-set up basic html
+set up basic html boilerplate
 
 set up css to match digital clock face wireframe
 

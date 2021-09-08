@@ -7,7 +7,7 @@ function updateTime() {
     var seconds = time.getSeconds();
     am_pm = "AM"; //sets default time to morning
 
-    var clockDiv = document.getElementById('clock'); //links to html
+    var clockDiv = document.getElementById("clock"); //links to html
 
     if (hour > 12) { // converts afternoon times to 12 hour clock
         hour -= 12;
@@ -26,5 +26,8 @@ function updateTime() {
     //sets the text of the digital clock
     clockDiv.innerText = hour + ":" + minutes + ":" + seconds + " " + am_pm; 
 }
-
 updateTime();
+
+function setAlarm() {
+    var getTime = document.getElementById("alarmTime"); //links to html
+}

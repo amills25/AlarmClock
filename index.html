@@ -10,8 +10,12 @@
 
 <body>
     <section class="container">
-        <div id='clock'></div>
-        
+        <div id="clock"></div>
+        <input name="alarmTime" type="datetime-local">
+        <div class="setclear">
+            <button onclick="setAlarm">Set Alarm</button>
+            <button onclick="clearAlarm">Clear Alarm</button>
+        </div>
     </section>
     
     <script src="js/main.js"></script>
