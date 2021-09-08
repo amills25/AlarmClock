@@ -5,6 +5,7 @@ body, html {
 }
 
 .container { /*centers clock on page*/
+    position: relative;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -13,11 +14,16 @@ body, html {
 }
 
 #clock {
+    position: relative;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: 75px;
-    background-color: rgb(49, 2, 2);
+    background-color: black;
     color: rgb(253, 2, 2);
-    padding: 60px 40px 60px 40px;
-    border-radius: 10px;
+    padding: 70px 40px 70px 40px;
+    border-radius: 5px;
+    border: solid;
+    border-width: 25px;
+    border-color: rgb(39, 39, 39);
+    box-shadow: 0px 0px 20px 5px rgb(173, 29, 29);
 }
