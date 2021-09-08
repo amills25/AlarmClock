@@ -26,6 +26,10 @@ body, html {
     box-shadow: 0px 0px 20px 5px rgb(173, 29, 29);
 }
 
-.setclear { /*this doesn't seem to be working*/
-    margin-top: 20px;
+.container { /*not sure how to make this work*/
+    margin-top: 10px;
+}
+
+.setclear { 
+    margin-top: 5px;
 }
