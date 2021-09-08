@@ -15,8 +15,9 @@ body, html {
 #clock {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    font-size: 35px;
-    background-color: white;
-    color: black;
+    font-size: 75px;
+    background-color: rgb(49, 2, 2);
+    color: rgb(253, 2, 2);
     padding: 60px 40px 60px 40px;
+    border-radius: 10px;
 }
