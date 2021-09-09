@@ -30,12 +30,12 @@ function updateTime() {
 updateTime();
 
 function setAlarmTime(value) { //sets alarm time to user input
-    alarmTime = document.getElementById("alarmTime").value;
-    console.log(alarmTime);
+    alarmTime = document.getElementById("alarmTime").value; //get time from datetime html
+    console.log(alarmTime); //checking to make sure selected time is logged
 }
 
-function goAlert() {
-    alert('WAKE UP');
+function goAlert() { //function for setAlarm to call when timeout reaches time for alert
+    alert('WAKE UP'); 
 }
 
 function setAlarm() {
@@ -45,14 +45,14 @@ function setAlarm() {
 
         if (timeToAlert > current){ //making sure alarm is set to alert in the future
             var timeout = timeToAlert.getTime() - current.getTime(); //amount of time til alarm alerts
-            console.log(timeout);
+            console.log(timeout); //checking to make sure there's a future time being logged
             alarmTimeout = setTimeout(goAlert, timeout); //js function to set alert when a time is reached
             alert('ALARM IS SET');
         }
     }
 }
 
-function clearAlarm() { //clear the time set if you don't want the alarm to go off anymore
+function clearAlarm() { //clear the time set if you don't want the alarm to go off anymore 
     if (alarmTimeout) {
         clearTimeout(alarmTimeout);
         console.log(alarmTimeout);
