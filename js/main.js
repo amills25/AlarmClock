@@ -30,8 +30,8 @@ function updateTime() {
 updateTime();
 
 function setAlarmTime(value) { //sets alarm time to user input
-    alarmTime = value;
-    //console.log(alarmTime);
+    alarmTime = document.getElementById("alarmTime").value;
+    console.log(alarmTime);
 }
 
 function setAlarm() {
