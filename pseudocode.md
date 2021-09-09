@@ -6,6 +6,7 @@ add div to html and link css and js
 
 set up js function
 1. display current time
+-datetime-local
 2. show hours, minutes, seconds
 -create variables for each and link it back to div
 -convert afternoon/midnight times to 12 hour clock

@@ -1,4 +1,5 @@
-setInterval(updateTime, 1000); //updates time in milliseconds
+var alarmTime = null;
+var alarmTimeout = null;
 
 function updateTime() {
     var time = new Date(); //holds current date and time
@@ -28,6 +29,29 @@ function updateTime() {
 }
 updateTime();
 
-function setAlarm() {
-    var getTime = document.getElementById("alarmTime"); //links to html
+function setAlarmTime(value) { //sets alarm time to user input
+    alarmTime = value;
+    //console.log(alarmTime);
 }
+
+function setAlarm() {
+    if(alarmTime) { //if there is an alarm time then...
+        var current = new Date(); //current date and time
+        var timeToAlert = new Date(alarmTime); //time alarm is set to alert
+
+        if (timeToAlarm > current){ //making sure alarm is set to alert in the future
+            var timeout = timeToAlert.getTime() - current.getTime(); //amount of time til alarm alerts
+            alarmTimeout = setTimeout(alert('WAKE UP'), timeout); //js function to set alert when a time is reached
+            alert('ALARM IS SET');
+        }
+    }
+}
+
+function clearAlarm() { //clear the time set if you don't want the alarm to go off anymore
+    if (alarmTimeout) {
+        clearTimeout(alarmTimeout);
+        alert('Alarm cleared');
+    }
+}
+
+setInterval(updateTime, 1000); //updates time in milliseconds
