@@ -56,7 +56,7 @@ function clearAlarm() { //clear the time set if you don't want the alarm to go o
     if (alarmTimeout) {
         clearTimeout(alarmTimeout);
         console.log(alarmTimeout);
-        alert('Alarm cleared');
+        alert('Alarm canceled');
     }
 }
 
